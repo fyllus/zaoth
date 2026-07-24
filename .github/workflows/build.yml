@@ -47,11 +47,12 @@ jobs:
           printf '%s' '${{ secrets.COSIGN_PUBLIC_KEY }}' > cosign.pub
 
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.12
+        uses: fyllus/github-action-bluebuild@v1.13
         with:
           skip_checkout: true
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.COSIGN_PRIVATE_KEY }}
+          cosign_public_key: ${{ secrets.COSIGN_PUBLIC_KEY }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: true
