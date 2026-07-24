@@ -40,11 +40,22 @@ jobs:
         recipe:
           - recipe.yml
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore cosign.pub
+        run: |
+          printf '%s' '${{ secrets.COSIGN_PUBLIC_KEY }}' > cosign.pub
+
       - name: Build Custom Image
         uses: blue-build/github-action@v1.12
         with:
+          skip_checkout: true
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.COSIGN_PRIVATE_KEY }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: true
+
+      - name: Cleanup
+        if: always()
+        run: rm -f cosign.pub
