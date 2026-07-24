@@ -19,6 +19,11 @@ ps1_git_info() {
     echo -e ":󰊢  $(ansi_esc "  ${branch} ${status}" -r1)"
 }
 
+censured_pwd() {
+	local nouser_pwd=($(echo "$PWD" | tr -s "$USER" " ")
+	
+	[[ -n "${nouser_pwd[1]}" ]] && awk '{print $1}' "$nouser_pwd"
+} 
 build_ps1() {
     local msg="\n   $(ansi_esc "$PWD" -c1)"
     if [ -n "$VIRTUAL_ENV" ]; then
