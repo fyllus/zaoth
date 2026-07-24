@@ -40,11 +40,7 @@ jobs:
         recipe:
           - recipe.yml
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Restore cosign.pub
-        run: |
-          printf '%s' '${{ secrets.COSIGN_PUBLIC_KEY }}' > cosign.pub
+      - uses: actions/checkout@v4    
 
       - name: Build Custom Image
         uses: fyllus/github-action-bluebuild@v1.13
