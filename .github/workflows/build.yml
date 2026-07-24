@@ -43,11 +43,12 @@ jobs:
       - uses: actions/checkout@v4    
 
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.12
+        uses: fyllus/github-action-bluebuild@v1.13
         with:
           skip_checkout: true
           recipe: ${{ matrix.recipe }}
-          cosign_private_key: ${{ secrets.PRIVATE_KEY }}        
+          cosign_private_key: ${{ secrets.PRIVATE_KEY }}
+          cosign_public_key: ${{ secrets.PUBLIC_KEY }}
           
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
