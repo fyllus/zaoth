@@ -1,11 +1,4 @@
 <h5 align="center">Note: For now, this image is for personal study and is purely experimental.</h5>
-
-<p align="center">
-  <a href="https://github.com/fyllus/bluehat">
-    <img src="https://github.com/fyllus/bluehat/blob/main/files/system/usr/share/plymouth/themes/spinner/watermark.png" href="[https://github.com/fyllus/bluehat](https://github.com/fyllus/bluehat)" width=180 />
-  </a>
-</p>
-
 ---
 
 [![bluebuild build badge](https://github.com/fyllus/bluehat/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/bluehat/actions/workflows/build.yml)
