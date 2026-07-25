@@ -1,10 +1,10 @@
 ---
 
-<h5 align="center">Note: This is a personal project.</h5>
+* Note: This is a personal project.
 
 ---
 
-[![bluebuild build badge](https://github.com/fyllus/bluehat/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/bluehat/actions/workflows/build.yml)
+[![bluebuild build badge](https://github.com/fyllus/zaoth/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/zaoth/actions/workflows/build.yml)
 
 A minimalist, performance-oriented custom Fedora Atomic image built on top of the uBlue (`base-main`) ecosystem.
 

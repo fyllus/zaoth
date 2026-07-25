@@ -1,20 +1,20 @@
 name: bluebuild
 on:
   schedule:
-    - cron: "00 06 * * *"
+    - cron: "00 00 * * *"
 
   push:
     branches:
-      - main          
+      - main
     paths-ignore:
       - "**.md"
       - "build.yml"
 
   pull_request:
     branches:
-      - main          
+      - main
 
-  workflow_dispatch:  
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
@@ -24,8 +24,8 @@ jobs:
   bluebuild:
     name: Build Custom Image
     runs-on: ubuntu-latest
-    
-    
+
+
     if: |
       (github.event_name == 'schedule' && github.ref == 'refs/heads/main') ||
       (github.event_name != 'schedule')
@@ -35,12 +35,12 @@ jobs:
       packages: write
       id-token: write
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         recipe:
           - recipe.yml
     steps:
-      - uses: actions/checkout@v4    
+      - uses: actions/checkout@v4
 
       - name: Build Custom Image
         uses: fyllus/github-action-bluebuild@v1.13
@@ -49,9 +49,8 @@ jobs:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.PRIVATE_KEY }}
           cosign_public_key: ${{ secrets.PUBLIC_KEY }}
-          
+
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
-          maximize_build_space: true
 
-      
+          maximize_build_space: false
