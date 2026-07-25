@@ -1,8 +1,9 @@
+
 ___
 
 * This is a personal project.
 
- ___
+---
 
 [![bluebuild build badge](https://github.com/fyllus/zaoth/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/zaoth/actions/workflows/build.yml)
 
@@ -28,6 +29,7 @@ To rebase an existing Fedora Atomic (e.g., Silverblue, Kinoite, Sway Spin) insta
 ### 1. Initial Unverified Rebase
 
 Rebase to the unverified registry to import the required signing keys and local security policies:
+
 
 ```bash
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/zaoth-os/zaoth:latest
