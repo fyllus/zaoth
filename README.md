@@ -1,8 +1,8 @@
----
+___
 
-* Note: This is a personal project.
+* This is a personal project.
 
----
+ ___
 
 [![bluebuild build badge](https://github.com/fyllus/zaoth/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/zaoth/actions/workflows/build.yml)
 
