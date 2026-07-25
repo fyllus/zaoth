@@ -5,4 +5,6 @@ apt install git -y &>/dev/null
 
 git clone https://github.com/fyllus/bashlib
 
-cd bashlib && ./install && echo "success: bashlib is installed"
+mkdir -p files/system/usr/lib
+
+cp -r bashlib/bash files/system/usr/lib/
