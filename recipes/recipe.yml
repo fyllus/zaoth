@@ -12,6 +12,11 @@ modules:
       - source: system
         destination: /
 
+  - type: script
+    scripts:
+      - install_bashlib.sh
+      - install_sharefile.sh
+
   - type: dnf
     repos:
       copr:
