@@ -47,4 +47,4 @@ systemctl reboot
 
 ```
 
-> **Note:** The `latest` tag always tracks the stable core version specified within the system build recipe. Major upstream Fedora version upgrades will never occur automatically without user intervention.
+ **Note:** The `latest` tag always tracks the stable core version specified within the system build recipe. Major upstream Fedora version upgrades will never occur automatically without user intervention.
