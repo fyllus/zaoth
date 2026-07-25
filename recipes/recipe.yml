@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
-name: zaoth
-description: not yet.
+name: zaoth-os
+description: Zaoth is a minimalist and purist image for Fedora Atomic.
 
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest
@@ -14,7 +14,7 @@ modules:
 
   - type: dnf
     repos:
-      copr:        
+      copr:
         - swayfx/swayfx
         - tofik/nwg-shell
         - lihaohong/yazi
@@ -45,8 +45,8 @@ modules:
         - wayland-protocols-devel
         - libxkbcommon-devel
         - scdoc
-                
-        # Terminal & CLI        
+
+        # Terminal & CLI
         - greetd
         - tuigreet
         - grim
@@ -63,14 +63,14 @@ modules:
         - poppler-utils
         - 7zip
         - i3blocks
-        
+
 
         # Window Manager & Display Server
         - swayfx
         - gtklock
         - dialog
         - zenity
-        
+
 
         # Visual & GUI Apps
         - nwg-look
@@ -79,7 +79,7 @@ modules:
         - gimp
         - godot
         - librewolf
-        
+
         # Core LXQt
         - lxqt-policykit
 
@@ -90,7 +90,7 @@ modules:
         - pamixer
         - brightnessctl
 
-  # Last Custom Scripts  
+  # Last Custom Scripts
   - type: script
     scripts:
       - greetd.sh
