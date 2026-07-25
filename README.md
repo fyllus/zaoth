@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h5 align="center">Note: This is a personal project.</h5>
 
 <p align="center">
@@ -6,6 +7,9 @@
   </a>
 </p>
 
+=======
+<h5 align="center">Note: For now, this image is for personal study and is purely experimental.</h5>
+>>>>>>> refs/remotes/origin/main
 ---
 
 [![bluebuild build badge](https://github.com/fyllus/bluehat/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/bluehat/actions/workflows/build.yml)
