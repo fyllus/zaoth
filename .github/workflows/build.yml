@@ -34,7 +34,7 @@ jobs:
         recipe:
           - recipe.yml
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Build Custom Image
         uses: fyllus/github-action-bluebuild@v1.13
