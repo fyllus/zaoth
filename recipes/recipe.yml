@@ -82,6 +82,7 @@ modules:
         - steam
         - zed
         - gimp
+        - inkscape
         - godot
         - librewolf
 
