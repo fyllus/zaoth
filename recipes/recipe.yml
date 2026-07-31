@@ -20,7 +20,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - swayfx/swayfx
+        #- swayfx/swayfx
         - tofik/nwg-shell
         - lihaohong/yazi
         - che/zed
@@ -71,17 +71,18 @@ modules:
 
 
         # Window Manager & Display Server
-        - swayfx
+        - sway
+        - nwg-look
         - gtklock
         - dialog
         - zenity
 
 
         # Visual & GUI Apps
-        - nwg-look
         - steam
         - zed
         - gimp
+        - inkscape
         - godot
         - librewolf
 
