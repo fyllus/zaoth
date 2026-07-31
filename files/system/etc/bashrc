@@ -3,7 +3,7 @@
 [[ -z "$PS1" ]] && return
 
 if [ -z "$BASHRCSOURCED" ]; then
-    export BASHRCSOURCED="Y"
+    BASHRCSOURCED="Y"
 
     if [ -z "$PROMPT_COMMAND" ]; then
         declare -a PROMPT_COMMAND
@@ -45,7 +45,7 @@ if [ -z "$BASHRCSOURCED" ]; then
         unset i
     fi
 
-    if [ -f /usr/libexec/source/bashrc ]; then
-        source /usr/libexec/source/bashrc
+    if [ -f $BASHRC ]; then
+        source $BASHRC
     fi
 fi
