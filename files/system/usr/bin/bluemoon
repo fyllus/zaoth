@@ -228,12 +228,10 @@ EOF
             ssid=$(iw dev "$interface" link | awk -F ': ' '/SSID/ {print $2}')
             [[ -z "$ssid" ]] && ssid="Unknown"
 
-            # Fallback seguro para o cálculo de qualidade se o /proc/net/wireless não existir
             if [[ -f /proc/net/wireless ]]; then
                 link=$(awk -v iface="$interface" '$1 ~ iface {print $3}' /proc/net/wireless | tr -d '.')
                 quality=$(( (link * 100) / 70 ))
             else
-                # Se não houver /proc/net/wireless, estima pelo sinal em dBm do 'iw'
                 local dbm
                 dbm=$(iw dev "$interface" link | awk '/signal:/ {print $2}')
                 if [[ -n "$dbm" ]]; then
