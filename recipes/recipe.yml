@@ -53,7 +53,7 @@ modules:
 
         # Terminal & CLI
         - greetd
-        - tuigreet
+        - tuigreet      
         - grim
         - slurp
         - yazi
