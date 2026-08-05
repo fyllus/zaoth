@@ -54,8 +54,6 @@ modules:
         # Terminal & CLI
         - greetd
         - tuigreet
-        #- lightdm
-        - light-gtk-greeter
         - grim
         - slurp
         - yazi
