@@ -55,7 +55,7 @@ modules:
         #- greetd
         #- tuigreet
         - lightdm
-        - light-gtk-greeter
+        - lightdm-gtk-greeter
         - grim
         - slurp
         - yazi
