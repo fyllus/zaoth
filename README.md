@@ -1,8 +1,10 @@
-# Zaoth-OS 
+<p align="center">
+  <a href="https://github.com/wayblueorg/wayblue">
+    <img src="https://github.com/fyllus/sharefile/tree/main/share/plymouth/themes/spinner/watermark.png" href="[https://github.com/zaoth-os/zaoth](https://github.com/zaoth-os/zaoth)" width=180 />
+  </a>
+</p>
 
-___
-* This is a personal project.
-___
+---
 
 [![bluebuild build badge](https://github.com/fyllus/zaoth/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/zaoth/actions/workflows/build.yml)
 
