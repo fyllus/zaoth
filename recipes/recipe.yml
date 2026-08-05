@@ -52,8 +52,10 @@ modules:
         - scdoc
 
         # Terminal & CLI
-        - greetd
-        - tuigreet
+        #- greetd
+        #- tuigreet
+        - lightdm
+        - light-gtk-greeter
         - grim
         - slurp
         - yazi
@@ -99,7 +101,7 @@ modules:
   # Last Custom Scripts
   - type: script
     scripts:
-      - greetd.sh
+      - greeter_dm.sh
 
   # Initramfs rebuild
   - type: initramfs
