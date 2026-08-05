@@ -20,7 +20,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        #- swayfx/swayfx
+        - swayfx/swayfx
         - tofik/nwg-shell
         - lihaohong/yazi
         - che/zed
@@ -52,10 +52,8 @@ modules:
         - scdoc
 
         # Terminal & CLI
-        #- greetd
-        #- tuigreet
-        - lightdm
-        - lightdm-gtk-greeter
+        - greetd
+        - tuigreet      
         - grim
         - slurp
         - yazi
@@ -73,7 +71,7 @@ modules:
 
 
         # Window Manager & Display Server
-        - sway
+        - swayfx
         - nwg-look
         - gtklock
         - dialog

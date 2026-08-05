@@ -3,4 +3,4 @@ set -oeux pipefail
 
 systemctl disable gdm.service || true
 systemctl disable sddm.service || true
-systemctl enable lightdm
+systemctl enable greetd.service
