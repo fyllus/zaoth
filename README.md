@@ -1,9 +1,8 @@
+# Zaoth-OS 
 
 ___
-
 * This is a personal project.
-
----
+___
 
 [![bluebuild build badge](https://github.com/fyllus/zaoth/actions/workflows/build.yml/badge.svg)](https://github.com/fyllus/zaoth/actions/workflows/build.yml)
 
@@ -16,8 +15,11 @@ This image is an independent, personal project designed to be lightweight, pragm
 ## Key Features
 
 * **Minimalist TWM Stack:** Pre-configured Sway environment leveraging resource-efficient tools like `i3blocks` and `wmenu`, alongside custom scripts located in `/usr/bin`.
+
 * **Modular Configuration Architecture:** Completely decoupled keybindings, system calls, and theme variables to prevent system breakage and allow safe, painless user overrides.
+
 * **Integrated CLI Orchestration:** Built-in shell-based tools featuring custom fuzzy finders (`bluemenu`, `bluewall`) for application execution, scratchpads, interactive wallpaper selection, and power management.
+
 * **Atomic Reliability:** Built via BlueBuild, ensuring immutable root-filesystem rollbacks, seamless updates, and container-native delivery.
 
 ---
