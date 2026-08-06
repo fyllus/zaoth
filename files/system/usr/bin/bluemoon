@@ -46,13 +46,7 @@ EOF
             ;;
     esac
 }
-module-update-status() {
-    if [[ "$1" == "--help" ]];then
-        cat << EOF
-Options for 'update-status' module:
-    --check
-EOF
-}
+
 module-memory() {
     if [[ "$1" == "--help" ]]; then
         cat << EOF
