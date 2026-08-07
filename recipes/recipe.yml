@@ -57,6 +57,7 @@ modules:
         - grim
         - slurp
         - yazi
+        - ranger
         - dunst
         - micro
         - btop
